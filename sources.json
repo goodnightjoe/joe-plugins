@@ -1,0 +1,41 @@
+{
+  "marketplace": {
+    "name": "joe-plugins",
+    "description": "Joe Lennard's curated community plugins, mirrored daily from their authors' GitHub repos",
+    "owner": { "name": "Joe Lennard" }
+  },
+  "plugins": [
+    {
+      "name": "impeccable",
+      "repo": "pbakaus/impeccable",
+      "ref": "main",
+      "mode": "plugin",
+      "path": "plugin",
+      "license_file": "LICENSE"
+    },
+    {
+      "name": "emil-design-eng",
+      "repo": "emilkowalski/skills",
+      "ref": "main",
+      "mode": "skills",
+      "skills": ["skills/emil-design-eng"],
+      "license_file": "LICENSE",
+      "description": "Emil Kowalski's design engineering philosophy: UI polish, component design, animation decisions and the small details that make software feel great.",
+      "author": "Emil Kowalski",
+      "homepage": "https://emilkowal.ski",
+      "license": "MIT"
+    },
+    {
+      "name": "shadcn",
+      "repo": "shadcn-ui/ui",
+      "ref": "main",
+      "mode": "skills",
+      "skills": ["skills/shadcn", "skills/migrate-radix-to-base"],
+      "license_file": "LICENSE.md",
+      "description": "shadcn/ui: search registries, add components as source code, build design systems, and migrate from Radix to Base UI.",
+      "author": "shadcn",
+      "homepage": "https://ui.shadcn.com",
+      "license": "MIT"
+    }
+  ]
+}
