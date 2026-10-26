@@ -1,0 +1,17 @@
+{
+  "emil-design-eng": {
+    "repo": "emilkowalski/skills",
+    "ref": "main",
+    "commit": "2d228630ba1446365f614a108cb8252f1feda202"
+  },
+  "impeccable": {
+    "repo": "pbakaus/impeccable",
+    "ref": "main",
+    "commit": "989c484c091d26f10fa102767eefc0da2e62ec67"
+  },
+  "shadcn": {
+    "repo": "shadcn-ui/ui",
+    "ref": "main",
+    "commit": "8f04138777c1b6996e709993362a7b0a12888ecf"
+  }
+}

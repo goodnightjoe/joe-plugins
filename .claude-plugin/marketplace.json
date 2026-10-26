@@ -1,0 +1,27 @@
+{
+  "name": "joe-plugins",
+  "description": "Joe Lennard's curated community plugins, mirrored daily from their authors' GitHub repos",
+  "owner": {
+    "name": "Joe Lennard"
+  },
+  "plugins": [
+    {
+      "name": "impeccable",
+      "description": "Design fluency for frontend development. 1 skill with 24 commands (/impeccable polish, /impeccable audit, /impeccable critique, etc.) and curated anti-pattern detection.",
+      "source": "./plugins/impeccable",
+      "homepage": "https://impeccable.style"
+    },
+    {
+      "name": "emil-design-eng",
+      "description": "Emil Kowalski's design engineering philosophy: UI polish, component design, animation decisions and the small details that make software feel great.",
+      "source": "./plugins/emil-design-eng",
+      "homepage": "https://emilkowal.ski"
+    },
+    {
+      "name": "shadcn",
+      "description": "shadcn/ui: search registries, add components as source code, build design systems, and migrate from Radix to Base UI.",
+      "source": "./plugins/shadcn",
+      "homepage": "https://ui.shadcn.com"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "emil-design-eng",
+  "description": "Emil Kowalski's design engineering philosophy: UI polish, component design, animation decisions and the small details that make software feel great.",
+  "author": {
+    "name": "Emil Kowalski"
+  },
+  "homepage": "https://emilkowal.ski",
+  "repository": "https://github.com/emilkowalski/skills",
+  "license": "MIT"
+}
