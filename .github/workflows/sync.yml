@@ -1,0 +1,44 @@
+name: Sync community plugins
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # every day at 05:17 UTC
+  workflow_dispatch:         # lets you run it by hand from the Actions tab
+  push:
+    paths:
+      - sources.json
+      - scripts/sync.py
+      - .github/workflows/sync.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull the latest from each author's repo
+        run: python3 scripts/sync.py
+
+      - name: Commit if anything changed
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "plugin-sync[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Sync plugins from upstream ($(date -u +%Y-%m-%d))"
+            git push
+          else
+            echo "Nothing changed upstream."
+          fi
